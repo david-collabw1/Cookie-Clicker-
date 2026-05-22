@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cookie Clicker</title>
+    <style>
+        body { 
+            text-align: center; 
+            font-family: sans-serif; 
+            background-color: #f0e6d6; 
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #5c3a21;
+            margin-bottom: 20px;
+        }
+        #cookie { 
+            font-size: 100px; 
+            cursor: pointer; 
+            background: none; 
+            border: none; 
+            transition: transform 0.1s;
+        }
+        #cookie:active {
+            transform: scale(0.9);
+        }
+        button.upgrade { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            margin: 10px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>COOKIE CLICKER</h1>
+    <p style="font-size: 24px;">Cookies: <span id="cookie-count">0</span></p>
+    
+    <!-- The main clickable cookie -->
+    <button id="cookie">🍪</button>
+    
+    <br><br>
+    <!-- Upgrades -->
+    <button id="buy-clicker" class="upgrade">Buy 2x Multiplier (Cost: 15)</button>
+    <p>Cookies Per Second: <span id="clicker-count">0</span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
